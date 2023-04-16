@@ -40,9 +40,8 @@ const PokemonList: React.FC<Props> = (props) => {
               <p className="detail-name">{name}</p>
             </div>
             <div className="detail-skill">
-              <p className="detial-ability">Abilities:</p>
               {abilities?.map((ab: any) => {
-                return <div>{ab.ability.name}</div>;
+                return <div>Abilities: {ab.ability.name}</div>;
               })}
             </div>
           </div>
